@@ -110,7 +110,7 @@ async def top_users(message: types.Message):
 
     text = "🏆 <b>TOP 10 Taklifchilar:</b>\n\n"
     for i, row in enumerate(rows, start=1):
-text += f"{i}. ID: <code>{str(row[0])[:5]}***</code> — <b>{row[1]}</b> ta\n"
+        text += f"{i}. ID: <code>{str(row[0])[:5]}***</code> — <b>{row[1]}</b> ta\n"
 
     await message.answer(text, parse_mode="HTML")
 
@@ -126,9 +126,7 @@ async def winner_cmd(message: types.Message):
 
     if not users:
         await message.answer("G'olibni aniqlash uchun ishtirokchilar yetarli emas.")
-        return
-
-winner_id = random.choice(users)[0]
+        return winner_id = random.choice(users)[0]
     await message.answer(f"🎊 Tasodifiy g‘olib aniqlandi!\n\n🏆 ID: <code>{winner_id}</code>", parse_mode="HTML")
 
 # 6. ASOSIY ISHGA TUSHIRISH
