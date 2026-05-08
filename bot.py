@@ -126,7 +126,8 @@ async def winner_cmd(message: types.Message):
 
     if not users:
         await message.answer("G'olibni aniqlash uchun ishtirokchilar yetarli emas.")
-        return winner_id = random.choice(users)[0]
+        return 
+    winner_id = random.choice(users)[0]
     await message.answer(f"🎊 Tasodifiy g‘olib aniqlandi!\n\n🏆 ID: <code>{winner_id}</code>", parse_mode="HTML")
 
 # 6. ASOSIY ISHGA TUSHIRISH
