@@ -10,8 +10,8 @@ from aiogram.filters import Command, CommandObject
 logging.basicConfig(level=logging.INFO)
 
 # Muhit o'zgaruvchilari (Serverdan olinadi)
-TOKEN = os.getenv("BOT_TOKEN")
-ADMIN_ID = int(os.getenv("ADMIN_ID", 0))
+TOKEN = os.getenv("8413733198:AAEq412ToouNZv-nbso5q_2NbGJy0gXfUQc")
+ADMIN_ID = int(os.getenv("8768834109", 0))
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
