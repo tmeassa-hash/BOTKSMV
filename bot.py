@@ -110,7 +110,7 @@ async def top_users(message: types.Message):
 
     text = "🏆 <b>TOP 10 Taklifchilar:</b>\n\n"
     for i, row in enumerate(rows, start=1):
-        text += f"{i}. ID: <code>{row[0] text[:5]}***</code> — <b>{row[1]}</b> ta\n"
+text += f"{i}. ID: <code>{str(row[0])[:5]}***</code> — <b>{row[1]}</b> ta\n"
 
     await message.answer(text, parse_mode="HTML")
 
